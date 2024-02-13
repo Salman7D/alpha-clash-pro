@@ -11,13 +11,14 @@
     <!-- custom css -->
     <link rel="stylesheet" href="styles/design.css">
 </head>
-<body class="min-h-screen bg-[#010313] bg-[url(images/background.png)] bg-no-repeat bg-center">
-    <main class=" ">
-        <section class="home hidden min-h-screen text-white flex border justify-center items-center">
+<body>
+    <main class="min-h-screen bg-[#010313] bg-[url(images/background.png)] bg-no-repeat bg-center">
+        <!-- home screen -->
+        <section class="home min-h-screen text-white flex border justify-center items-center">
             <div class="flex flex-col items-center gap-10">
                 <h1 class="text-8xl font-anton uppercase">alpha clash pro </h1>
                 <p>Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-                <button class="btn bg-white text-black">play</button>
+                <button onclick="play()" class="btn bg-white text-black">play</button>
             </div>
             
      
@@ -90,11 +91,19 @@
               </div>
         </div>    
         </section>
-    
-        <section class="score">
-    
+        <!-- final score start-->
+        <section class="score flex justify-center items-center min-h-screen hidden">
+            <div class="text-white text-center space-y-8 bg-[#FFFFFF33] p-4 rounded-lg"> 
+                <h1 class="text-8xl">
+                    <span class="font-extrabold">Score:</span>
+                    <span>14</span>
+                </h1>
+                <button class="btn">Play Again</button>
+                <p>Practice will make you pro</p>
+            </div>
         </section>
     </main>
+    <script src="scripts/alpha-cash.js"></script>
     
 </body>
 </html>
