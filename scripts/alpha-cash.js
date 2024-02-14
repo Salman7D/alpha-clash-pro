@@ -16,7 +16,7 @@ function handleKeyBoardKeyUpEvent(event){
     console.log("Player Pressed", playerPressed);
 
     // stop the game if pressed "ESC"
-    if(playerPressed === "Escaped"){
+    if(playerPressed === "Escape"){
         gameOver();
     }
 
