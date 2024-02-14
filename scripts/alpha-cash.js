@@ -20,11 +20,14 @@ function handleKeyBoardKeyUpEvent(event){
     const currentAlphabetElement = document.getElementById("current-alphabet");
     const currentAlphabet = currentAlphabetElement.innerText;
     const expectedAlphabet = currentAlphabet.toLowerCase();
-    console.log(playerPressed, expectedAlphabet); 
+    // console.log(playerPressed, expectedAlphabet); 
 
     // check matched or not
     if(playerPressed === expectedAlphabet){
         console.log("you get a point");
+        console.log("you have pressed correctly", expectedAlphabet);
+        removeBackgroundColorById(expectedAlphabet);
+        continueGame(); 
     }
 
     else{
@@ -38,7 +41,7 @@ document.addEventListener('keyup', handleKeyBoardKeyUpEvent);
 function continueGame(){
     // step - 1: generate a random alphabet
     const alphabet = getRandomAlphabet();
-    console.log("your random alphabet",alphabet);
+    // console.log("your random alphabet",alphabet);
 
     // set randomly generated alphabet to the screeb(show it)
     const currentAlphabetElement = document.getElementById("current-alphabet");
