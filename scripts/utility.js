@@ -39,7 +39,7 @@ function getElementTextById(elementId){
 function getRandomAlphabet(){
     const alphabetString = "abcdefghijklmopqrstuvwxyz";
     const alphabets = alphabetString.split("");
-    console.log(alphabets);
+    
 
     // get a random index between 0 - 25
     const randomNumber = Math.random()*25;

@@ -52,7 +52,7 @@ function handleKeyBoardKeyUpEvent(event){
         
 
     // // 2. increase the score by 1
-    //     const newScore = currentScore + 1;
+         const newScore = currentScore + 1;
 
     // // 3. show the updated score
     //     currentScoreElement.innerText = newScore;                                                                         
@@ -128,7 +128,7 @@ function gameOver(){
 
     // clear the last selected alphabet highlighted
 
-    const currentAlphabet = getTextElementValueById("current-alphabet");
+    const currentAlphabet = getElementTextById("current-alphabet");
     // 
     removeBackgroundColorById(currentAlphabet);
 }
